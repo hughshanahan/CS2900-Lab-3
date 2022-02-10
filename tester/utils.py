@@ -13,24 +13,9 @@ def check_code(regex):
     return no_match
 
 
-def check_As(As):
-    conj = True
-    for i in range(4):
-        Ai = np.load(f"tester/res/A{i}.npy")
-        conj = conj and np.allclose(As[i], Ai, atol=10**-3, rtol=0)
-    return conj
-
-
-def check_bs(bs):
-    conj = True
-    for i in range(4):
-        bi = np.load(f"tester/res/b{i}.npy")
-        conj = conj and np.array_equal(bs[i], bi)
-    return conj
-
-def check_array_list(name, list):
+def check_array_list(fname, list):
     conj = True
     for i in range(len(list)):
-        exp = np.load(f"tester/res/{name}{i}.npy")
+        exp = np.load(f"tester/res/{fname}{i}.npy")
         conj = conj and np.array_equal(list[i], exp)
     return conj
