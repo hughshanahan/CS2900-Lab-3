@@ -14,8 +14,10 @@ def check_code(regex):
 
 
 def check_array_list(fname, list):
-    conj = True
     for i in range(len(list)):
         exp = np.load(f"tester/res/{fname}{i}.npy")
-        conj = conj and np.array_equal(list[i], exp)
-    return conj
+        if not np.array_equal(list[i], exp):
+            print(f"{fname}[{i}] is not incorrect! Double check this value.")
+            return False
+    return True
+
