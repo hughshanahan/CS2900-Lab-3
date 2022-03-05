@@ -48,7 +48,7 @@ test = {
                     'code': r"""
                     >>> # Your solutions list is missing one or more solutions.
                     >>> # Check you have included all of valid solutions.
-                    >>> [22.22222222222222, -22.22222222222222] in [ list(arr) for arr in solutions ]
+                    >>> np.any([ np.allclose(np.array([22.22222,-22.22222]), sol, rtol=10e-3, atol=10e-3) for sol in solutions ])
                     True
                     """
                 },
@@ -56,7 +56,7 @@ test = {
                     'code': r"""
                     >>> # Your solutions list is missing one or more solutions.
                     >>> # Check you have included all of valid solutions.
-                    >>> [-1.3157894736842095, 10.526315789473685, 101.3157894736842] in [ list(arr) for arr in solutions ]
+                    >>> np.any([ np.allclose(np.array([-1.31578,10.52631,101.31578]), sol, rtol=10e-3, atol=10e-3) for sol in solutions ])
                     True
                     """
                 },
