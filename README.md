@@ -1,30 +1,37 @@
 # CS2900 Lab 3
 
-Please click on the launch Binder icon below. 
-
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/hughshanahan/CS2900-Lab-3/master)
-
-It will take a few minutes to launch....
-
-When it launches you should get the following
-
-![alt text](https://github.com/KuipersT/CS2900-Lab-3/blob/master/config/binder_dashboard.png)
-
-Click on the file "Lab3.ipynb". This should create a new tab with the following. 
-
-![alt text](https://github.com/KuipersT/CS2900-Lab-3/blob/master/config/loaded_notebook.png)
-
-Follow the instructions from there...
-
-# If Binder doesn't work you can run the notebooks locally
-
 ## Running in NoMachine
 
 You can run Jupyter directly from the department server:
 
-- First `git clone` the repository and `cd` into the repository folder.
-- Run `pip3 install okpy`
-- Type, run `jupyter notebook` to launch the notebook in the browser.
+- First run the following command
+```
+git clone git@github.com:hughshanahan/CS2900-Lab-3.git
+```
+to clone the repository and `cd` into the repository folder.
+
+- Then run 
+```
+jupyter notebook
+``` 
+to launch the notebook in the browser.
+
+You may have to copy and paste a URL from the output on the command line to the browser. 
+
+![Example output to be copied from running jupyter notebook](https://github.com/hughshanahan/CS2900-Lab-1/blob/master/config/CommandLineOutput.png)
+
+![Paste to browser bar](https://github.com/hughshanahan/CS2900-Lab-1/blob/master/config/PasteToBrowser.png)
+
+Once it has loaded, you be greeted with this screen:
+
+![Image of Binder dashboard](https://github.com/hughshanahan/CS2900-Lab-1/blob/master/config/JupyterLaunchPage.png)
+
+Double-click on the file "Lab3.ipynb". This should create a new tab with something like this:
+
+![Image of Jupyter notebook](https://github.com/hughshanahan/CS2900-Lab-1/blob/master/config/loaded_notebook.png)
+
+Follow the instructions from there...
+
 
 ## Running on your own machine
 
